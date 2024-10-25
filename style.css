@@ -1,0 +1,157 @@
+@font-face {
+    font-family: Handwrite;
+    src: url(../Jul_Portfolio/Handwrite.ttf);
+}
+@font-face {
+    font-family: magazineLetter;
+    src: url(../Jul_Portfolio/magazineLetter.ttf);
+}
+@font-face {
+    font-family: alittlepot;
+    src: url(../Jul_Portfolio/alittlepot.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bg{
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    height:10vh;
+    width:100vw;
+    background-color:rgb(252, 252, 252);
+    background-position:center;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+    transform: translateY(110%);
+    transition: 0.3s ease;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    transition: 0.3s ease;
+}
+
+.details{
+    font-family: Handwrite;
+    position: relative;
+    margin-left: 8%;
+    padding: 20px; /* Add some padding for aesthetics */
+    box-sizing: border-box; /* Ensure padding is included in the width/height calculations */
+}
+
+.details h1 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+    margin-top:15%;
+}
+
+.details p {
+    color: dimgrey;
+    line-height: 1.6;
+}
+
+.abt-container{
+    display:flex;
+    flex-direction:row;
+}
+
+.images {
+    width: 30%;
+    height: 400px;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left:20%;
+    transform: translateY(40%);
+}
+
+.images img {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-35%);
+    transition: bottom 1s, left 1s, right 1s;
+    
+}
+
+.images:hover .shape {
+    bottom: 70px;
+}
+
+.images:hover .juliet {
+    left: 120%;
+    
+}
+
+.images:hover .juliet2 {
+    right: 30%;
+}
+
+.images .juliet{
+    left: 0;
+    border-radius: 40px;
+    transition: left 1s;
+    box-shadow: inset 0 0 15px black, 0 0 15px black;
+}
+
+.images .juliet2 {
+    right: 0;
+    border-radius: 40px;
+    width: 100%;
+    height: 70%;
+    box-shadow: inset 0 0 15px grey, 0 0 15px grey;
+    transition: right 1s;
+}
+
+.aboutme {
+    width: 80%;
+    position: relative;
+    text-align: center;
+    transform: translateY(40%);
+}
+
+.aboutme h2 {
+    font-size: 60px;
+    color: black;
+    margin-bottom: 20px;
+    font-family: magazineLetter;
+}
+
+.aboutme p {
+    color: dimgrey;
+    margin-top:50px;
+    margin-bottom: 20px;
+    font-family: alittlepot;
+    font-size:25px;
+}
